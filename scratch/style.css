@@ -1,3 +1,6 @@
-body{
-  background: #edf2f0;
+p{
+  color: red;
+  background-color: lightgrey;
+  margin-left: 1em;
+  margin-right: 1em;
 }
