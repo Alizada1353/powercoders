@@ -5,10 +5,11 @@ p.warning {
   padding: .5em 1em;
   border-radius: 5px;
   text-shadow: 1px 1px 1px black;
+
 }
 
 p.warning::before {
-  content: "WARNING!:"
+  content: "WARNING!:" /*this will be added before the p text with warning class */
 }
 
 p em {
