@@ -1,0 +1,76 @@
+body{
+  background:#475B70;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  padding: 10px;
+}
+h1{
+  font-family: Times New Roman;
+  text-align: center;
+  color: rgb(173, 129, 44);
+  text-shadow: 1px 2px 1px white;
+
+}
+img{
+  float: right;
+  border: 1px solid rgba(96, 46, 6, 0.62);
+  padding: 10px;
+  margin: 20px 5px 10px;
+  display: inline-block;
+}
+
+
+.content-1{
+  padding-left: 70px;
+  padding-top: 80px;
+  margin: 5px;
+  font-size: larger;
+  color:rgb(213, 215, 215);
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+
+.content-1 h2{
+  color: red rgb(223, 182, 7);
+  padding-bottom: 10px;
+  margin: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+.content-2, .content-3{
+  grid-column-start:1;
+  grid-column-end:3;
+  text-align: justify;
+  line-height: 1.6;
+  color:rgb(213, 215, 215);
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 0px 70px;
+}
+
+.content-2 h2, .content-3 h2{
+  color: rgb(219, 197, 72);
+  text-transform: lowercase;
+}
+.content-3 ol #li4{
+  padding-bottom: 50px;
+}
+
+
+p{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+ul li{
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+ol li{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+.quantity{
+  font-style: 'Inconsolata', monospace;
+}

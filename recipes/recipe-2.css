@@ -1,0 +1,23 @@
+h1{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+}
+
+p{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+ul li{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+ol li{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+.quantity{
+  font-style: 'Inconsolata', monospace;
+}
