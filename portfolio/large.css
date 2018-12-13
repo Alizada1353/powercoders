@@ -1,71 +1,125 @@
-@media screen and (max-width: 470px) {
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  h1 {
-    font-family: serif;
-    text-align: center;
-    border: 1px solid rgba(178, 178, 179, 0.55);
-    border-radius:5px;
-    padding: 3px;
-    font-size: .5em;
-    display: inline-block;
-    position: relative;
-    left: 35%;
-    color: rgba(71, 54, 37, 0.49)
-  }
-  .sub-title {
-    font-size: 8px;
-    padding-left: 0;
-    margin-left: 2em;
-    margin-bottom: 0em;
-
-  }
-
-  img {
-    position: absolute;
-    top: 7em;
-    right: 5em;
-    width: 8em;
-    height: 10em;
-  }
-
-  h3 {
-    font-family:'Merriweather', serif;
-    font-size: 6px;
-    color:rgba(7, 49, 110, 0.86);
-    margin: 1em;
-  }
-
-  #info p{
-    font-size: 6px;
-    padding-left:
-  }
-
-  p {
-    font-family:sans-serif;
-    color: rgba(66, 44, 39, 0.83);
-    line-height: 0.20;
-    font-size: 6px;
-    padding-left: .5em;
-  }
-
-  ul li, ol li {
-    font-family:sans-serif;
-    font-size: 6px;
-    color: rgba(66, 44, 39, 0.83);
-    padding-left: 0;
-    text-decoration: none;
-  }
-
-  ul, ol{
-    padding-left: .6em;
-    margin-top: .5em;
-  }
-
-  .educaional-background, .skills, .experiences,.Hobbies, .references, #info {
-    border-left: 0.5px solid rgba(108, 3, 3, 0.57);
-    margin: 0em 0em 1em 1em;
-
+body {
+  position: relative;
+  padding: 10px;
 }
+div.my-name{
+  text-align: center;
+  font-size: 14px;
+  color: rgba(53, 64, 65, 0.44);
+  margin-top: 0;
+}
+div.my-name h1, ul, ol {
+  margin-top: 0;
+}
+div.first-info{
+  position: relative;
+  padding: 10px 5px;
+}
+div.main-content{
+  position: relative;
+  border-top: 1px solid rgba(115, 17, 0, 0.38);
+  padding: 30px 5px;
+}
+
+div#personal-info {
+  display: inline-block;
+  padding-left: 8px;
+  width: 27%;
+  line-height: .80;
+}
+
+div#image img {
+  position: absolute;
+  left: 25%;
+  top: .3em;
+  width: 115px;
+  height: 145px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+div.experiences{
+  position: absolute;
+  top: 50px;
+  right: 2em;
+  left: calc(23% + 200px);
+  display: inline-block;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 2;
+}
+div.experiences {
+  margin: 0;
+}
+
+div.main-content .educaional-background{
+  padding-left: 8px;
+  width: 27%;
+}
+div.main-content .educaional-background ul, .educaional-background ul li ul{
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+div.main-content .languages{
+  position: absolute;
+  left: 30%;
+  top: 20px;
+  width: 250px;
+  font-size: 14px;
+}
+
+div.main-content .information-technology{
+  position: absolute;
+  right: 1em;
+  top: 20px;
+  left: calc(35% + 250px);
+  display: inline-block;
+  font-size: 12px;
+  line-height: .25;
+}
+
+div.footer{
+  position: relative;
+  padding: 10px 5px;
+  border-top: 1px solid rgba(115, 17, 0, 0.38);
+}
+
+div.footer .Hobbies{
+  display: inline-block;
+  padding-left: 8px;
+  width: 27%;
+  line-height: .80;
+}
+
+div.references{
+  position: absolute;
+  left: 28%;
+  top: 50px;
+  width: 250px;
+  font-size: 14px;
+}
+
+p {
+  font-family:sans-serif;
+  color: rgba(66, 44, 39, 0.83);
+  line-height: 0.50;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+ul li, ol li {
+  font-family:sans-serif;
+  font-size: 12px;
+  color: rgba(66, 44, 39, 0.83);
+  padding-left: 0;
+}
+
+h2.sub-title {
+  font-family: serif;
+  font-size: 16px;
+  color:rgba(7, 49, 110, 0.86);
+  padding-left: 0;
+  padding-bottom: 10px;
+  margin: 0 ;
+}
+

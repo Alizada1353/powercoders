@@ -1,9 +1,9 @@
-h1 {
+div.my-name h1 {
   font-family: serif;
   text-align: center;
   border: 1px solid rgba(178, 178, 179, 0.55);
   border-radius:5px;
-  padding: 3px;
+  padding: 4px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -16,14 +16,8 @@ h1 {
   font-family: serif;
   font-size: 1em;
   color:rgba(7, 49, 110, 0.86);
-  padding-left: 2em;
-}
-
-h3 {
-  font-family:'Merriweather', serif;
-  font-size: 12px;
-  color:rgba(7, 49, 110, 0.86);
-  margin: 2em;
+  padding-left: 0;
+  margin: 0 ;
 }
 
 img {
@@ -35,29 +29,51 @@ img {
   height: 150px
 }
 
+
+div.content{
+  border-left: 0.5px solid rgba(108, 3, 3, 0.57);
+}
+
+div.experiences, div.footer, div.main-content, div.first-info {
+  margin: 1em;
+}
+
+div.Hobbies, div.references{
+  margin: 0;
+}
+
+/*h2.sub-title{
+  padding-left: 0;
+  margin: 0 ;
+}*/
+
 p {
   font-family:sans-serif;
   color: rgba(66, 44, 39, 0.83);
   line-height: 0.50;
   font-size: 12px;
-  padding-left: 2em;
+  padding-left: 10px;
 }
 
 ul li, ol li {
   font-family:sans-serif;
   font-size: 12px;
   color: rgba(66, 44, 39, 0.83);
+  padding-left: 0;
 }
+
+ul , ol {
+  padding-left: 20px;
+}
+/*here ends the new styling*/
+
+
 
 body {
   margin: 10px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 10px;
   background-color: rgb(254, 255, 255)
-}
 
-.educaional-background, .skills, .experiences,.Hobbies, .references, #info {
-  border-left: 0.5px solid rgba(108, 3, 3, 0.57);
-  margin: 1em 0em 2em 3em;
 }
 
 .Hobbies p{
@@ -67,5 +83,5 @@ body {
   display: inline-block;
   background-color: rgba(90, 186, 231, 0.36);
   margin-left: 2em;
-}
 
+}
