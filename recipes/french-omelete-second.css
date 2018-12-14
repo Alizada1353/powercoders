@@ -1,0 +1,83 @@
+body {
+  position: relative;
+  background: rgba(52, 84, 119, 0.87);
+}
+
+.head {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.head .content-1{
+  font-size: larger;
+  color:rgb(213, 215, 215);
+  display: inline-block;
+  text-transform: lowercase;
+  padding: 30px 0px 0px 30px;
+}
+.content-1 h2{
+  color:rgba(190, 135, 0, 0.6);
+}
+
+.head img{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  border: 1px solid rgba(96, 46, 6, 0.62);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(97, 25, 4, 0.66);
+}
+
+.head .name{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  margin-top: 1.5em;
+  font-size: 3em;
+  font-family: Times New Roman;
+  text-align: center;
+  color: rgb(173, 129, 44);
+  text-shadow: 1px 2px 1px white;
+}
+
+.body {
+  position: absolute;
+  left: 1em;
+  width: 23em;
+  min-height: 50vh;
+  padding-right: 10px;
+}
+
+.content-2, .content-3 {
+  text-align: justify;
+  line-height: 1.6;
+  color:rgb(213, 215, 215);
+  font-size: 18px;
+  text-transform: lowercase;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.content-2 h2, .content-3 h2{
+  color: rgb(219, 197, 72);
+  text-transform: lowercase;
+  padding-left: 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.foot {
+  position: absolute;
+  left: 24em;
+  min-height: 50vh;
+  width: calc(96% - 23em);
+  padding: 10px;
+}
+
+.content-3 ol #li4{
+  padding-bottom: 50px;
+}
+div.content-3 ol{
+  border-left: 1px solid grey;
+}
