@@ -6,16 +6,21 @@
 }
 
 .warning {
-  background: rgb(192, 0, 0); }
+  background: rgb(192, 0, 0);
+}
 
 .warning::before {
-  content: "WARNING: "; }
+  content: "WARNING: ";
+}
 
 .tip {
-  background: rgb(0, 192, 0); }
+  background: rgb(0, 192, 0);
+}
 
 .tip::before {
-  content: "TIP: "; }
+  content: "TIP: ";
+}
 
 .warning::before, .tip::before {
-  font-weight: bold; }
+  font-weight: bold;
+}
