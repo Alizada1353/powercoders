@@ -1,0 +1,21 @@
+.first {
+    border: 1px inherit;
+    color: darkgray;
+    background: darkgreen;
+    padding: 10px;
+    display: none;
+}
+
+.second {
+    border: 1px solid inherit;
+    color: darkgray;
+    background-color: black;
+    padding: 10px;
+}
+
+.show {
+    border: 1px inherit;
+    color: darkgray;
+    background: darkgreen;
+    padding: 10px;
+}
