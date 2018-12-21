@@ -1,0 +1,17 @@
+#clicker {
+    color: green;
+}
+
+ul li:nth-child(odd) {
+    font-size: 16px;
+    color: red;
+}
+
+ul li:nth-child(even) {
+    font-size: 16px;
+    color: blue;
+}
+
+em {
+    color:darkgreen;
+}
