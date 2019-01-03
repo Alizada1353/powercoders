@@ -1,0 +1,120 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+div {
+  border: 1px solid black;
+  background: lightgray;
+}
+
+h1 {
+    font-family: Times New Roman, serif;
+  text-align: center;
+  padding-bottom: 0;
+  color: rgba(29, 61, 94, 0.76);
+  text-shadow: 1px 2px 1px white;
+}
+
+img {
+  float: right;
+  border: 1px solid rgba(96, 46, 6, 0.62);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+div.img {
+  background-color:goldenrod;
+  border: rgba(29, 61, 94, 0.76);
+  border-radius: 10px;
+}
+
+div#ingredients {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  padding: 15px;
+  background-color: rgba(29, 61, 94, 0.76);
+  border:rgba(29, 61, 94, 0.76);
+  border-radius: 10px;
+}
+
+
+div#ingredients ul li {
+  color: lightsteelblue;
+}
+
+.content-1 ul li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.content-1 h2 {
+  color: rgb(223, 182, 7);
+  padding:10px 10px;
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+.content-2 {
+  grid-column-start:2;
+  grid-column-end:5;
+  text-align: justify;
+  line-height: 1.6;
+  color: rgba(29, 61, 94, 0.86);
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 10px 30px 10px 10px;
+  background-color: goldenrod;
+  border: rgba(29, 61, 94, 0.86);
+  border-radius: 10px;
+}
+
+.content-3 {
+  grid-column-start:2;
+  grid-column-end:5;
+  text-align: justify;
+  line-height: 1.6;
+  color:rgb(16, 121, 121);
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 10px 30px 10px;
+}
+
+.content-2 h2, .content-3 h2 {
+  color:rgba(29, 61, 94, 0.86);
+  text-transform: lowercase;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  font-family: 'Quattrocento Sans', sans-serif;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+ul, ol{
+  padding-left: 30px;
+}
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.hide {
+  display: none;
+}
