@@ -1,23 +1,143 @@
-h1{
-  font-family: 'Merriweather', serif;
+body{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(249, 252, 255);
+  position: relative;
+  grid-gap: 10px;
+}
+
+div.image {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  padding: 10px;
+  margin-left: 40px;
+  height: 160px;
+  width: 200px;
+}
+
+img {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 1px solid sienna;
+  border-radius: 5px;
+
+}
+
+h1 {
+  text-shadow: 1px 1px 3px darkred;
+  color: darkcyan;
+  padding: 15px;
+  border: 1px solid darkcyan;
+  border-radius: 10px;
+}
+
+#main-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  padding: 20px 1em;
+  text-transform: capitalize;
+  font-size: larger;
   text-align: center;
 }
 
-h2{
-  font-family: 'Merriweather', serif;
+#main-title p {
+  font-size: 16px;
+  font-family: 'Arial', monospace;
 }
 
-p{
-  font-family: 'Quattrocento Sans', sans-serif;
+#ingredients {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  padding: 1em;
+  border: 1px solid rgb(175, 214, 205);
+  border-radius: 10px;
+  background-color: rgb(255, 250, 244);
 }
 
-ul li{
-  font-family: 'Quattrocento Sans', sans-serif;
+#ingredients li {
+  text-decoration: none;
+  line-height: 2em;
+  color: rgb(24, 120, 153);
+  font-family: 'Helvetica', sans-serif;
+
 }
 
-ol li{
-  font-family: 'Quattrocento Sans', sans-serif;
+#ingredients ul {
+  padding-left: 2em;
+  font-family: 'Georgia', sans-serif;
 }
-.quantity{
-  font-style: 'Inconsolata', monospace;
+
+#cooking-instructions {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  padding: 2em;
+  font-family: 'Georgia', sans-serif;
+  border: 1px solid rgb(175, 214, 205);
+  border-radius: 10px;
+  background-color: rgb(255, 250, 244);
+}
+
+#cooking-instructions p {
+  color: rgb(24, 120, 153);
+  font-family: 'Helvetica', sans-serif;
+
+}
+
+#recipe-tip {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding: 2em;
+  border: 1px solid rgb(175, 214, 205);
+  border-radius: 10px;
+  background: url("vigitbales.jpg") fixed bottom no-repeat;
+}
+
+#recipe-tip p {
+  padding: 20px;
+  background-color: rgba(255,255, 255, 0.9);
+  border: 1px solid green;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  color: darkslategray;
+  line-height: 1.5em;
+  border-radius: 10px;
+}
+
+h2 {
+  color: darkcyan;
+  text-shadow: 1px 1px 1px darkolivegreen;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(183, 45, 45);
+  font-family: '', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgba(255,255, 255, 0.9);
+
+}
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.hide {
+  display: none;
 }
