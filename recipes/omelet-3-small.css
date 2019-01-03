@@ -1,0 +1,67 @@
+@media all {
+    body {
+        position: relative;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-family: 'Arial', sans-serif;
+        grid-gap: 5px;
+        background-color: transparent;
+    }
+
+    div.name, div.photo, div.Tip, div.cocking-instructions, div#ingredients, div.different, div#footer {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        height: auto;
+        width: 95%;
+    }
+
+    div.name {
+        grid-row-start: 1;
+    }
+
+    div.photo img{
+        height: 100%;
+        width: 100%;
+    }
+
+    div.photo {
+        grid-row-start: 2;
+        background-color: transparent;
+    }
+
+    div.different {
+        grid-row-start: 3;
+        background-color: transparent;
+        padding: 0 35px 0 20px;
+
+    }
+
+    div#ingredients {
+        grid-row-start: 4;
+        background-color: transparent;
+        padding-left: 30px;
+    }
+
+    div#ingredients ul li {
+        line-height: 2.25;
+        color: black;
+    }
+
+    div.cocking-instructions {
+        grid-row-start: 5;
+        background-color: transparent;
+        border: 1px solid burlywood;
+        border-radius: 20px;
+    }
+    div.Tip {
+         grid-row-start: 6;
+        background-color: transparent;
+        border: 1px solid burlywood;
+        border-radius: 20px;
+    }
+
+    div#footer {
+        grid-row-start: 7;
+    }
+}
