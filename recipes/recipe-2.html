@@ -2,27 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Chicken</title>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="recipe-2.css">
+    <script src="recipe.js"></script>
   </head>
   <body>
-    <h1>Mustard-stuffed chicken</h1>
-    <p><img src="chicken.jpg" alt="mustard-stuffed-chicken"></p>
 
-    <div class="cooking-instructions">
-      <h2>coking method</h2>
-      <p>Heat oven to <span class="quantity">200</span>C/fan <span class="quantity">180</span>C/gas <span class="quantity">6</span>. Mix the cheeses and mustard together.
-        Cut a slit into the side of each chicken breast, then stuff with the
-        mustard mixture. Wrap each stuffed chicken breast with <span class="quantity">2</span> bacon rashers
-        – not too tightly, but enough to hold the chicken together. Season,
-        place on a baking sheet and roast for <span class="quantity">20-25</span> mins.</p>
-    </div>
+      <div id="main-title">
+        <h1>Mustard-stuffed chicken</h1>
+      </div>
+      <div class="image">
+        <img src="chicken.jpg" alt="mustard-stuffed-chicken">
+      </div>
 
-
-      <h2>Ingredience</h2>
-    <div class="ingredince-list">
-      <ul>
+    <div id="ingredients">
+      <h2><span id="hide-list" class="show" onclick="hide(event);">&#9711;</span>
+        <span id="show-list" class="hide" onclick="show(event);">&#8857;</span>
+        Ingredients</h2>
+      <ul id="ingredient-list">
         <li><span class="quantity">125</span>g ball mozzarella, torn into small pieces</li>
         <li><span class="quantity">50</span>g strong cheddar, grated</li>
         <li>1 tbsp wholegrain mustard</li>
@@ -31,9 +30,18 @@
       </ul>
     </div>
 
-    <div class="Tip">
+    <div id="cooking-instructions">
+      <h2>cooking method</h2>
+      <p>Heat oven to <span class="quantity">200</span>C/fan <span class="quantity">180</span>C/gas <span class="quantity">6</span>. Mix the cheeses and mustard together.
+        Cut a slit into the side of each chicken breast, then stuff with the
+        mustard mixture. Wrap each stuffed chicken breast with <span class="quantity">2</span> bacon rashers
+        – not too tightly, but enough to hold the chicken together. Season,
+        place on a baking sheet and roast for <span class="quantity">20-25</span> mins.</p>
+    </div>
+
+    <div id="recipe-tip">
       <h2>Recip tip</h2>
-      <h4>MAKE IT VEGGIE</h4>
+      <h3>MAKE IT VEGGIE</h3>
       <p>Cheesy baked mushrooms: Heat oven to 180C/fan <span class="quantity">160</span>C/gas
          <span class="quantity">4</span>. Mix the mozzarella and cheddar with 1 tbsp pesto, then spoon
          into the hollows of <span class="quantity">4</span> portobello mushrooms.
