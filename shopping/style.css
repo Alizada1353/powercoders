@@ -1,7 +1,39 @@
+.wrap {
+    border: 1px solid grey;
+    height: 400px;
+    width: 600px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: darkslategray;
+}
+
 button {
-    padding: 10px;
+    padding: 5px;
     background: darkcyan;
     color: white;
     border: 1px solid green;
     border-radius: 20px;
+}
+
+label {
+    font-family: 'Helvetica', sans-serif;
+    color: #475B70;
+}
+
+input  {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+ul li:nth-child(even) {
+    color: darkblue;
+}
+
+ul li:nth-child(odd) {
+    color: darkred;
 }
