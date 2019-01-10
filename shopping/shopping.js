@@ -1,12 +1,22 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-
   document.getElementById('item').focus();
 
   document.querySelector('button').addEventListener('click', function (event) {
     let inputBox = document.getElementById('item');
     let li = createNewListItem(inputBox.value);
     document.querySelector('ul').appendChild(li);
+
+    if (inputBox.value === '') {
+      li.remove();
+      document.querySelector('button').style.backgroundColor = ('red');
+    }
+
+    else {
+      document.querySelector('button').style.backgroundColor =  ('limegreen');
+    }
+
     inputBox.value = '';
+    document.getElementById('item').focus();
   });
 
   document.querySelector('input').addEventListener('keyup', function (event) {
@@ -14,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
       let inputBox = document.getElementById('item');
       let li = createNewListItem(inputBox.value);
       document.querySelector('ul').appendChild(li);
+      if (inputBox.value === '') {
+        li.remove();
+        document.querySelector('button').style.backgroundColor = ('red');
+      }
+      else {
+        document.querySelector('button').style.backgroundColor =  ('limegreen');
+      }
       inputBox.value = '';
     }
   });
