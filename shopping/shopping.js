@@ -1,10 +1,19 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  document.querySelector('button').addEventListener('click', function (event) {
 
+  document.getElementById('item').focus();
+
+  document.querySelector('button').addEventListener('click', function (event) {
     let inputBox = document.getElementById('item');
     let li = createNewListItem(inputBox.value);
-
     document.querySelector('ul').appendChild(li);
+  });
+
+  document.querySelector('input').addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+      let inputBox = document.getElementById('item');
+      let li = createNewListItem(inputBox.value);
+      document.querySelector('ul').appendChild(li);
+    }
   });
 });
 
@@ -12,20 +21,14 @@ function createNewListItem(itemName) {
   let li = document.createElement("li");
 
   let span = document.createElement("span");
-  let spanText = document.createTextNode(itemName);
-
-  span.appendChild(spanText);
-  li.appendChild(span);
+  li.appendChild(span).innerText = itemName;
 
   let button = document.createElement("button");
-  let buttonText = document.createTextNode('Delete');
+  li.appendChild(button).innerText = 'Delete';
 
   button.addEventListener('click', function () {
     li.remove();
   });
-
-  button.appendChild(buttonText);
-  li.appendChild(button);
 
   return li;
 }
