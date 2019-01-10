@@ -1,33 +1,22 @@
 function addList() {
-    let elUl = document.createElement("ul");
-    let elLi1 = document.createElement("li");
-    let li1Text = document.createTextNode('Hi! , I am the first list item.');
-    elLi1.appendChild(li1Text);
+    let ul = document.createElement("ul");
+    let li1 = document.createElement("li");
+    ul.appendChild(li1).innerText = 'li 1';
 
-    elUl.appendChild(elLi1);
+    let li2 = document.createElement("li");
+    ul.appendChild(li2).innerText = 'before';
 
-    let elLi2 = document.createElement("li");
-    let li2Text1 = document.createTextNode('Hi!, I am the ');
-    elLi2.appendChild(li2Text1);
+    let em = document.createElement("em");
+    li2.appendChild(em).innerText = ' emphasized';
 
-    let li2Em = document.createElement('em');
-    let insidEm = document.createTextNode('second ');
-    li2Em.appendChild(insidEm);
+    let li2Text2 = document.createTextNode(' after');
+    ul.appendChild(li2Text2);
 
-    elLi2.appendChild(li2Em);
+    let  li3 = document.createElement("li");
+    ul.appendChild(li3).innerText = 'I am li3 Text.';
 
-
-    elLi2.appendChild(document.createTextNode('list item.'));
-    elUl.appendChild(elLi2);
-
-    let elLi3 = document.createElement("li");
-    let li3Text = document.createTextNode('Hi! , I am the third list item.');
-    elLi3.appendChild(li3Text);
-
-    elUl.appendChild(elLi3);
-
-    let elBody = document.getElementById('body');
-    elBody.appendChild(elUl);
+    let Body = document.getElementById('body');
+    Body.appendChild(ul);
 }
 
 document.addEventListener('DOMContentLoaded', function(event){
