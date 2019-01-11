@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  let inputBox = document.getElementById('item');
-  let shoppingList = document.querySelector('ul');
-  let addItemButton = document.querySelector('button');
+  const inputBox = document.getElementById('item');
+  const shoppingList = document.querySelector('ul');
+  const addItemButton = document.querySelector('button');
 
   addItemButton.addEventListener('click', function (event) {
     if (inputBox.value.trim() !== '') {
@@ -29,22 +29,20 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function createNewListItem(itemName) {
-  let li = document.createElement("li");
+  const li = document.createElement("li");
 
-  let span = document.createElement("span");
+  const span = document.createElement("span");
   li.appendChild(span).innerText = itemName;
 
-  let button = document.createElement("button");
+  const button = document.createElement("button");
   li.appendChild(button).innerText = 'Delete';
 
   button.addEventListener('click', function () {
     li.remove();
-    let inputBox = document.getElementById('item');
+    const inputBox = document.getElementById('item');
     inputBox.focus();
   });
 
   return li;
 }
-
-
 
