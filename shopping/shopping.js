@@ -1,39 +1,25 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  document.getElementById('item').focus();
+  let inputBox = document.getElementById('item');
+  let shoppingList = document.querySelector('ul');
 
   document.querySelector('button').addEventListener('click', function (event) {
-    let inputBox = document.getElementById('item');
-    let li = createNewListItem(inputBox.value);
-    document.querySelector('ul').appendChild(li);
-
-    if (inputBox.value === '') {
-      li.remove();
-      document.querySelector('button').style.backgroundColor = ('red');
-    }
-
-    else {
-      document.querySelector('button').style.backgroundColor =  ('limegreen');
-    }
-
-    inputBox.value = '';
-    document.getElementById('item').focus();
-  });
-
-  document.querySelector('input').addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-      let inputBox = document.getElementById('item');
-      let li = createNewListItem(inputBox.value);
-      document.querySelector('ul').appendChild(li);
-      if (inputBox.value === '') {
-        li.remove();
-        document.querySelector('button').style.backgroundColor = ('red');
-      }
-      else {
-        document.querySelector('button').style.backgroundColor =  ('limegreen');
-      }
+    let trimmedValue = inputBox.value.trim();
+    if (trimmedValue !== '') {
+      shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
       inputBox.value = '';
     }
+    inputBox.focus();
   });
+
+  inputBox.addEventListener('keyup', function (event) {
+    if (inputBox.value.trim() !== '') {
+      if (event.key === 'Enter') {
+        shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
+        inputBox.value = '';
+      }
+    }
+  });
+  inputBox.focus();
 });
 
 function createNewListItem(itemName) {
@@ -47,6 +33,8 @@ function createNewListItem(itemName) {
 
   button.addEventListener('click', function () {
     li.remove();
+    let inputBox = document.getElementById('item');
+    inputBox.focus();
   });
 
   return li;
