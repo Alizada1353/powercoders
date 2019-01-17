@@ -1,22 +1,67 @@
-#wrap {
-    border: 1px solid grey;
-    height: 400px;
-    width: 600px;
-    background-color: lightgoldenrodyellow;
-    border-radius: 10px;
-    text-align: center;
+body {
+    background-image: url("banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-h1 {
-    font-family: 'Helvetica', sans-serif;
-    color: darkslategray;
+.top-image {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
 }
 
-button {
-    padding: 5px;
-    background: limegreen;
+.top-image img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+}
+
+#carton img {
+    position: absolute;
+    top: 223px;
+    left: -11px;
+    height: 380px;
+}
+
+#carton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 350px;
+    width: 50px;
+}
+
+
+#inputs {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px 0 5px 10px;
+    border-bottom: 2px solid red;
+    margin-bottom: 5px;
+    width: 435px;
+}
+
+h1 {
+    font-family: 'Helvetica', sans-serif;
     color: white;
-    border: 1px solid green;
-    border-radius: 20px;
+    text-shadow: 1px 1px 2px red;
+    text-align: center;
+    width: 400px;
+}
+button {
+    background: transparent;
+    color: dodgerblue;
+    padding: 0;
+    border: none;
+}
+button:disabled {
+    color: orangered;
+}
+
+button i.fas {
+   margin-right: 20px;
 }
 
 label {
@@ -28,26 +73,94 @@ input  {
     border: 1px solid gray;
     border-radius: 5px;
     background-color: transparent;
+    color: #475B70;
+    margin-bottom: 5px;
 }
 
-ul li:nth-child(even) {
-    color: darkblue;
+ul li {
+    color: lightcyan;
+    font-family: 'Helvetica', sans-serif;
 }
 
-ul li:nth-child(odd) {
-    color: darkred;
-}
-
-ul li button {
+.fa-trash {
     margin: 10px 15px;
-    background-color: red;
-    color: white;
-    border: 1px solid red;
+    color: red;
+    border: none;
 }
+
 
 ul {
     list-style: none;
-    text-align: left;
 }
+
+ul i {
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.center {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.deleteAll {
+    background-color: darkred;
+    padding: 5px;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+/*
+@media {
+    #carton img {
+        position: absolute;
+        top: 100px;
+        left: -11px;
+        height: 280px;
+    }
+
+    .top-image img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-family: 'Helvetica', sans-serif;
+        color: white;
+        text-shadow: 1px 1px 2px red;
+        text-align: center;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .inputs {
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 3px 0 5px 10px;
+        border-bottom: 2px solid red;
+        margin-bottom: 5px;
+        width: 200px;
+        font-size: small;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    button i.fas {
+        margin-left: 15px;
+    }
+
+    button i.fas {
+        margin-left: 15px;
+    }
+}
+
+
 
 
