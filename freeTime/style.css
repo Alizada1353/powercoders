@@ -1,0 +1,50 @@
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+  padding: 5px;
+  background-color: dodgerblue;
+  color: ghostwhite;
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+}
+
+.hideButton {
+  display: inline;
+  padding: 5px;
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: ghostwhite;
+  border-radius: 5px;
+
+}
+
+.hiddenData {
+  display: none;
+}
+
+.showedData {
+  background-image: url("logo.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  font-family: 'georgia',sans-serif;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 147px;
+  color: white;
+  text-shadow: 1px 3px 3px red;
+  margin-top: 20px;
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.showedData::before {
+  content: '';
+  margin-right: 126px;
+  margin-left: 110px;
+}
