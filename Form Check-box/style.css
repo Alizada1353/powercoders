@@ -1,0 +1,52 @@
+form {
+  background-color: transparent;
+}
+
+#bilinfo {
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #475B70;
+}
+#shipinfo {
+  background-color: cornsilk;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #475B70;
+}
+
+label {
+  padding: 10px;
+  line-height: 2em;
+  margin-right: 9em;
+  color: dimgray;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+#fname, #lname, #add1, #city, #zip {
+  width: 250px;
+  float: right;
+  margin-right: 50em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+
+#state {
+  margin-left: 7.1em;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#submit {
+  background-color: #475B70;
+  border-radius: 5px;
+  border: 1px solid #475B70;
+  color: #fefefe;
+  padding: 5px;
+  margin-left: 10px;
+}
