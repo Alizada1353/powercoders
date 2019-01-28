@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+function domContentLoaded() {
   /** Widget that the user types an item in to. */
   const inputBox = document.getElementById('item');
   const shoppingList = document.querySelector('ul');
@@ -44,7 +44,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
   inputBox.focus();
   clearBtn.disabled = true;
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function (event) {
+    domContentLoaded();
+  });
+} else {
+    domContentLoaded();
+}
 
 /**
  * creates and returns an 'li' element for inclusion in the shopping list.

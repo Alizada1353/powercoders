@@ -7,9 +7,17 @@ body {
   margin: 0 auto;
   background: url("banner.jpeg");
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
   width: 448px;
   height: 900px;
+  position: relative;
+}
+
+#flower {
+  width: 444px;
+  position: absolute;
+  top: 15%;
+  z-index: 2;
 }
 
 .top-image {
@@ -33,9 +41,15 @@ body {
     max-height: calc(100vh - 60vh);
     box-sizing: border-box;
     opacity: 0.5;
-    z-index: 1;
 }
 
+#mermaid {
+  float: left;
+  left: 10px;
+  height: 400px;
+  width: 20%;
+  transform: translate(-20%);
+}
 
 #inputs {
     background-color: white;
@@ -45,15 +59,6 @@ body {
     border-bottom: 2px solid red;
     margin-bottom: 5px;
     width: 435px;
-    z-index: 1;
-}
-
-h1 {
-    font-family: 'Helvetica', sans-serif;
-    color: white;
-    text-shadow: 1px 1px 2px red;
-    text-align: center;
-    width: 400px;
 }
 
 #add {
@@ -64,18 +69,18 @@ h1 {
 }
 
 #clear:disabled {
-  background: darkgreen;
-  color: white;
+  background: #0a9ca5e0;
+  color: #fffffe;
   padding: 4px;
-  border: 1px solid white;
-  border-radius: 7px;
+  border: 1px solid #151f10a8;
+  border-radius: 6px;
 }
 
 #clear {
-  background: red;
-  color: white;
+  background: #f7040485;
+  color: #fffffe;
   padding: 4px;
-  border: 1px solid white;
+  border: 1px solid #1e472bd1;
   border-radius: 7px;
 }
 
@@ -102,30 +107,35 @@ input  {
 }
 
 ul li {
-    color: lightcyan;
-    font-family: 'Helvetica', sans-serif;
+  color: lightcyan;
+  font-family: 'Helvetica', sans-serif;
+  border-left: 1px solid #475B70;
+  border-bottom: 1px solid #475B70;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 10px 23px;
 }
 
-.fa-trash {
-    margin: 10px 15px;
-    color: red;
-    border: none;
+ul i.fa-trash {
+  margin: 0 auto;
+  border: none;
+  float: right;
+  right: 5px;
 }
 
 
 ul {
     list-style: none;
     margin: 0 auto;
-}
-
-ul i {
-    margin: 0 auto;
-    border: 1px solid red;
+    padding: 0;
 }
 
 .center {
-    margin: 0 auto;
-    width: 500px;
+  width: 444px;
+  position: absolute;
+  top: 28%;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 
