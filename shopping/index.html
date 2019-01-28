@@ -2,26 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopping list</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <script src="shopping.js"></script>
+    <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 600px)" href="small.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1285px)" href="medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 1286px)" href="large.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="shopping.js"></script>
   </head>
 
   <body>
-    <div id="carton"><img src="carton.png" alt="a carton"></div>
+    <div class="container">
 
-    <div class="top-image"><img src="carton-2.png" alt="a carton"></div>
+      <div class="top-image"><img src="carton-2.png" alt="a carton"></div>
 
-    <div class="center">
-      <h1>World's Top Brands</h1>
-      <div id="inputs">
-        <label for="item">Enter a new item:</label>
-        <input type="text" id="item" placeholder=" Type the item to buy">
-        <button><i class="fas fa-cart-arrow-down fa-2x"></i></button>
+      <div class="center">
+        <h1>World's Top Brands</h1>
+        <div id="inputs">
+          <label for="item">Enter a new item:</label>
+          <input type="text" id="item" placeholder=" Type the item to buy">
+          <button id="add"><i class="fas fa-cart-arrow-down fa-2x"></i></button>
+          <button id="clear">Delete All</button>
+        </div>
+        <ul>
+
+        </ul>
       </div>
-      <ul>
-
-      </ul>
     </div>
   </body>
 </html>
