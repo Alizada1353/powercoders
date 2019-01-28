@@ -1,0 +1,61 @@
+body {
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+
+.top-image img {
+  position: absolute;
+  opacity: 0.2;
+  top: 23%;
+  width: 224px;
+  height: 218px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px red;
+  text-align: center;
+  width: 440px;
+  font-size: 30px;
+}
+
+#inputs {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 0 5px 10px;
+  border-bottom: 2px solid red;
+  margin-bottom: 5px;
+  width: 440px;
+  font-size: small;
+}
+
+input  {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #475B70;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.center {
+  margin: 0 auto;
+  position: relative;
+  top: -28%;
+  width:  465px;
+}
+
+#add i.fas {
+  margin-right: 20px;
+}
+
