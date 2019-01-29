@@ -46,10 +46,6 @@ body {
 
 }
 
-#mermaid {
-  display: none;
-}
-
 #inputs {
   background-image: url("banner.jpeg");
   border-top: 1px solid white;
@@ -102,4 +98,17 @@ ul i.fa-trash {
   float: right;
   right: 5px;
   color: #d2d3d2fc;
+}
+
+#quantity{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5px;
+  width: 100px;
+}
+
+span.quantityText {
+  margin-left: 130px;
 }
