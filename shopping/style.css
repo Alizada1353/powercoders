@@ -48,10 +48,10 @@ body {
     background-color: white;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 3px 0 5px 10px;
+    padding: 10px 0 5px 0;
     border-bottom: 2px solid red;
     margin-bottom: 5px;
-    width: 435px;
+    width: 426px;
 }
 
 #add {
@@ -69,12 +69,19 @@ body {
   border-radius: 6px;
 }
 
+button#clear {
+  float: right;
+  margin-right: 20px;
+}
+
 #clear {
   background: #f7040485;
   color: #fffffe;
   padding: 4px;
   border: 1px solid #1e472bd1;
   border-radius: 7px;
+  float: right;
+  margin-right: 20px;
 }
 
 #add:disabled {
@@ -89,6 +96,8 @@ body {
 label {
     font-family: 'Helvetica', sans-serif;
     color: darkslategray;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 input  {

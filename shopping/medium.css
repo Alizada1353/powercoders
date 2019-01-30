@@ -14,6 +14,11 @@ body {
   box-sizing: content-box;
 }
 
+button#clear {
+  float: right;
+  margin-right: 20px;
+}
+
 #flower {
   width: 444px;
   position: absolute;
@@ -51,11 +56,6 @@ body {
   border-top: 1px solid white;
   border-right: none;
   border-left: none;
-  border-bottom: none;
-  border-radius: 5px;
-  padding: 3px 0 5px 10px;
-  margin-bottom: 5px;
-  width: 440px;
   font-size: small;
 }
 
@@ -64,6 +64,7 @@ label {
   font-weight: bold;
   background-color: #555d5c;
   padding: 5px;
+  margin-left: 5px;
   border-radius: 5px;
 }
 
@@ -106,6 +107,7 @@ ul i.fa-trash {
   background-color: transparent;
   color: white;
   margin-bottom: 5px;
+  margin-right: 10px;
   width: 100px;
 }
 
