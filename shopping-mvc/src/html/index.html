@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping list</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 600px)" href="../css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1150px)" href="../css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 1151px)" href="../css/large.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="../js/shopping-list-item.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/ui.js" async></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top-image"><img src="../static/carton.png" alt="a carton"></div>
+      <img src="../static/flowers.png" id="flower" alt="a flower">
+      <div class="center">
+        <div id="inputs">
+          <label for="item">Enter a new item:</label>
+          <input type="text" id="quantity" placeholder=" quantity">
+          <input type="text" id="item" placeholder=" Type the item to buy">
+          <button id="add"><i class="fas fa-cart-arrow-down fa-2x"></i></button>
+          <button id="clear">Delete All</button>
+        </div>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
