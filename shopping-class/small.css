@@ -1,0 +1,125 @@
+body {
+  background-image: url("banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-image: none;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid white;
+  box-sizing: content-box;
+}
+
+button#clear {
+  float: right;
+  margin-right: 20px;
+}
+
+#flower {
+  width: 444px;
+  position: absolute;
+  top: -1%;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.top-image img {
+  position: absolute;
+  opacity: 0.2;
+  top: 23%;
+  width: 224px;
+  height: 218px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+}
+
+#mermaid {
+  display: none;
+}
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px red;
+  text-align: center;
+  width: 440px;
+  font-size: 30px;
+}
+
+#inputs {
+  background-image: url("banner.jpeg");
+  border-top: 1px solid white;
+  border-right: none;
+  border-left: none;
+  margin: 0 auto;
+  font-size: small;
+}
+
+label {
+  color: #1fc5d8;
+  font-weight: bold;
+  background-color: #555d5c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input  {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: lightblue;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.center {
+  margin: 0 auto;
+  position: relative;
+  top: -15%;
+  width:  465px;
+}
+
+#add i.fas {
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul li {
+  color: lightcyan;
+  font-family: 'Helvetica', sans-serif;
+  border-left: 1px solid #475B70;
+  border-bottom: 1px solid #475B70;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 10px 23px;
+}
+
+ul i.fa-trash {
+  margin: 0 auto;
+  border: none;
+  float: right;
+  right: 5px;
+  color: #d2d3d2fc;
+}
+
+#quantity{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5px;
+  width: 100px;
+}
+
+span.quantityText {
+  margin-left: 130px;
+}

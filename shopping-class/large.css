@@ -1,0 +1,110 @@
+body {
+  background: #475B70;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  background: url("banner.jpeg");
+  z-index: 1;
+  width: 448px;
+  height: 900px;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  position: relative;
+}
+
+button#clear {
+  float: right;
+  margin-right: 20px;
+}
+
+#flower {
+  width: 444px;
+  position: absolute;
+  top: 19%;
+  z-index: 2;
+}
+
+.top-image img {
+  width: 252px;
+  height: 245px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 446px;
+  position: absolute;
+  top: 33%;
+  z-index: 2;
+}
+
+#inputs {
+  background-image: url("banner.jpeg");
+  border-top: 1px solid white;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 5px;
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  width: 426px;
+  font-size: small;
+}
+
+label {
+  color: #1fc5d8;
+  font-weight: bold;
+  background-color: #555d5c;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+input  {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: lightblue;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul li {
+  color: lightcyan;
+  font-family: 'Helvetica', sans-serif;
+  border-left: 1px solid #475B70;
+  border-bottom: 1px solid #475B70;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 10px 23px;
+}
+
+ul i.fa-trash {
+  margin: 0 auto;
+  border: none;
+  float: right;
+  right: 5px;
+  color: #d2d3d2fc;
+}
+
+span.quantityText {
+  margin-left: 130px;
+}
+
+#quantity{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5px;
+  width: 100px;
+}

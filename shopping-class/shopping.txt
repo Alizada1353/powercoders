@@ -1,0 +1,53 @@
+line 1 calls `addEventListener` method on the DOM object in the global `document` variable. it passes two
+parameters,`DOMContentLoaded` as the event type and `function ()` anonymous function as event listener.
+
+Line 2 declares a variable named `inputBox` and assigned to call `getElementById` method, which takes one string
+parameter `item`, on the DOM object in the global document
+variable.
+
+Line 3 declares variable named `shoppingList` and assigned to call `querySelector` method, which takes one string
+parameter `ul`, on the DOM object in the global document
+variable.
+
+Line 4 declares variable named `addItemButton` and assigned to call `querySelector` method, which takes one string
+parameter `item`, on the DOM object in the global document
+variable.
+
+line 6 calls `addEventListener` method, which takes to parameters, the `click` event and anonymous `function ()` as
+the listener for the `click` event, on the `addItemButton` variable.
+
+line 7  considers the condition of the `if` expression, either to be `true` or `false`. it compares if
+trimmed value of the `inputBox` with the `''`.
+
+line 8 calls a the `creatNewListItem` function, which takes one parameter `inputBox.value.trimmed()` and adds
+the Value of `creatNewListItem` function as the child to the `shoppingList` variable.
+
+line 9 assigns the value of the `inputBox` to an empty string `''`.
+
+line 10 assigns the value of `disabled` attribute to `true` in the `addItemButton` variable.
+
+line 12 calls the `focus()` method on the element `inputBox`.
+
+line 15 calls the `addEventListener` method on the variable `inputBox`. this method takes two parameters
+`keyup` event, and anonymous `function ()` as the event listener.
+
+line 16 same as line 7
+
+line 17 assigns the value of `disabled` attribute to `false` in the `addItemButton` variable.
+
+line 18 considers th condition of the `if` statement either to be `true` or false. it compares if
+the `keyup` event equals to the string `Enter`.
+
+line 19 same as line 8
+line 20 same as line 9
+line 21 - 29  almost repeated
+
+line 31 & 34 escaped
+
+line 35 calls the `appendChild` method on the `li` local variable. It appends the `span` element with
+it's `innerText` property assigned to parameter of the `createNewListItem` function,
+as the child to `li` variable.
+
+
+
+
