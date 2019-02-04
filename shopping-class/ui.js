@@ -81,13 +81,14 @@ function domContentLoaded() {
     addItemButton.disabled = true;
     clearButton.disabled = false;
   });
-  inputBox.focus();
-
+  quantityBox.focus();
 }
 
 if (document.readyState === 'loading') {
+  const quantityBox = document.getElementById('quantity');
   document.addEventListener('DOMContentLoaded', function () {
     domContentLoaded();
+    quantityBox.focus();
   });
 } else {
   domContentLoaded();
