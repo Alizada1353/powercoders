@@ -18,19 +18,17 @@ class ShoppingListItem {
   toListItem() {
     const listItem = document.createElement('li');
 
-    const listText = document.createElement('span');
-    listText.textContent = this.name;
+    const span = document.createElement('span');
+    span.textContent = this.name;
 
-    const deleteButton = document.createElement('i');
-    listItem.appendChild(deleteButton).className = 'fa fa-trash';
+    const icon = document.createElement('i');
+    icon.className = 'fa fa-trash';
 
-    deleteButton.addEventListener('click', function (event) {
-      listItem.remove();
-      const inputBox = document.getElementById('item');
-      inputBox.focus();
-    });
+    const deleteButton = document.createElement('button')
+    deleteButton.className = 'deleteButton';
+    deleteButton.appendChild(icon);
 
-    listItem.appendChild(listText);
+    listItem.appendChild(span);
 
     if (this.quantity !== '') {
       listItem.appendChild(document.createTextNode(' '));
