@@ -2,13 +2,14 @@
  * Create the controller to run the application.
  */
 function domContentLoaded() {
+  const quantityBox = document.getElementById('quantity');
   new Controller();
+  quantityBox.focus();
 }
 if (document.readyState === 'loading') {
-  const quantityBox = document.getElementById('quantity');
   document.addEventListener('DOMContentLoaded', function () {
     domContentLoaded();
-    quantityBox.focus();
+
   });
 } else {
   domContentLoaded();
