@@ -96,6 +96,12 @@ ul i.fa-trash {
   color: #d2d3d2fc;
 }
 
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
 span.quantityText {
   margin-left: 130px;
 }

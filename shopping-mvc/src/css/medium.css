@@ -114,3 +114,9 @@ ul i.fa-trash {
 span.quantityText {
   margin-left: 130px;
 }
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  float: right;
+}

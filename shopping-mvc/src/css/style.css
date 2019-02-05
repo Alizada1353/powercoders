@@ -74,6 +74,12 @@ button#clear {
   margin-right: 20px;
 }
 
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
 #clear {
   background: #f7040485;
   color: #fffffe;
