@@ -21,6 +21,12 @@ class Controller {
   }
 
   /**
+   * clear the shopping list.
+   */
+  clearList() {
+    this.model_.clear();
+  }
+  /**
    * Delete the i'th item from the list.
    *
    * @param i {number}

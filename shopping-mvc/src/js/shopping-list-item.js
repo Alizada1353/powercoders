@@ -34,7 +34,7 @@ class ShoppingListItem {
       listItem.appendChild(document.createTextNode(' '));
       const span = document.createElement('span');
       span.className = 'quantity';
-      span.textContent = `(${this.quantity})`;   // '(' + quantity + ')'
+      span.textContent = `(${this.quantity})`;
       listItem.appendChild(span);
     }
 
