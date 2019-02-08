@@ -9,7 +9,6 @@ function domContentLoaded() {
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', function () {
     domContentLoaded();
-
   });
 } else {
   domContentLoaded();
