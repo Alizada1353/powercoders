@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping list</title>
+    <link rel="stylesheet" href="../src/css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 600px)" href="../src/css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1150px)" href="../src/css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 1151px)" href="../src/css/large.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="shopping.min.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top-image"><img src="../src/static/carton.png" alt="a carton"></div>
+      <img src="../src/static/flowers.png" id="flower" alt="a flower">
+      <div class="center">
+        <div id="inputs">
+          <label for="item">Enter a new item:</label>
+          <input type="text" id="quantity" placeholder=" quantity">
+          <input type="text" id="item" placeholder=" Type the item to buy">
+          <button id="add"><i class="fas fa-cart-arrow-down fa-2x"></i></button>
+          <button id="clear">Delete All</button>
+        </div>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
