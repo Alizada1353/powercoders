@@ -24,11 +24,57 @@ module.exports = function (grunt) {
           dest: 'build/static',
         }]
       }
+    },
+    cssmin: {
+      options: {
+        level: 2
+      },
+      base: {
+        files: {
+          'build/css/base.min.css': ['src/css/style.css']
+        }
+      },
+      media: {
+        src: ['src/css/*.css', '!src/css/style.css'],
+        dest: 'build/css/media.min.css'
+      }
+    },
+    watch: {
+      less: {
+        files: 'src/css/*.less',
+        tasks: ['less'],
+      },
+      css: {
+        files: 'src/css/*.css',
+        tasks: ['cssmin']
+      },
+      scripts: {
+        files: 'src/js/*.js',
+        tasks: ['uglify']
+      },
+      html: {
+        files: 'src/html/index.prod.html',
+        tasks: ['copy:html']
+      },
+      static: {
+        files: 'src/static(*.*',
+        tasks: ['copy:static']
+      }
+    },
+    less: {
+      build: {
+        files: {
+          'src/css/style.css': 'src/css/style.less'
+        }
+      }
     }
   });
-
+//..
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
-  grunt.registerTask('default', ['uglify', 'copy']);
+  grunt.registerTask('default', ['less', 'cssmin', 'uglify', 'copy']);
 };

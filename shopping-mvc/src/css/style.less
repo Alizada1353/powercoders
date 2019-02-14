@@ -1,3 +1,6 @@
+@clear-button-text-color: #fffffe;
+@default-border-radius: 5px;
+
 body {
     background: #475B70;
     background-size: cover;
@@ -47,7 +50,7 @@ body {
 #inputs {
     background-color: white;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: @default-border-radius;
     padding: 10px 0 5px 0;
     border-bottom: 2px solid red;
     margin-bottom: 5px;
@@ -63,7 +66,7 @@ body {
 
 #clear:disabled {
   background: #0a9ca5e0;
-  color: #fffffe;
+  color: @clear-button-text-color;
   padding: 4px;
   border: 1px solid #151f10a8;
   border-radius: 6px;
@@ -82,7 +85,7 @@ button#clear {
 
 #clear {
   background: #f7040485;
-  color: #fffffe;
+  color: @clear-button-text-color;
   padding: 4px;
   border: 1px solid #1e472bd1;
   border-radius: 7px;
@@ -108,7 +111,7 @@ label {
 
 input  {
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: @default-border-radius;
     background-color: transparent;
     color: #475B70;
     margin-bottom: 5px;
@@ -116,7 +119,7 @@ input  {
 
 #quantity{
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: @default-border-radius;
   background-color: transparent;
   color: white;
   margin-bottom: 5px;
@@ -133,7 +136,7 @@ ul li {
   border-left: 1px solid #475B70;
   border-bottom: 1px solid #475B70;
   border-collapse: collapse;
-  border-radius: 5px;
+  border-radius: @default-border-radius;
   padding: 10px 23px;
 }
 
@@ -163,5 +166,3 @@ span.quantityText {
   z-index: 2;
   margin: 0 auto;
 }
-
-
