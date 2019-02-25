@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     return (
         <>
-          <ItemInput/>
           <ClearList/>
           <ShoppingList items={this.state.items}/>
+          <ItemInput/>
         </>
     );
   }
