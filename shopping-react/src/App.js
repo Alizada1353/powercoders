@@ -11,6 +11,11 @@ class App extends Component {
       items: [],
     };
     this.onAddItem = this.onAddItem.bind(this);
+    this.onClearList = this.onClearList.bind(this);
+  }
+
+  onClearList() {
+    this.setState({items: []});
   }
 
   onAddItem(name, quantity) {
@@ -25,7 +30,7 @@ class App extends Component {
     return (
         <>
           <ItemInput onAddItem={this.onAddItem}/>
-          <ClearList/>
+          <ClearList onClearList={this.onClearList}/>
           <ShoppingList items={this.state.items}/>
         </>
     );
