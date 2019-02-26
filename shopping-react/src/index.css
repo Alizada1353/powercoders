@@ -25,9 +25,17 @@ body {
   padding: 2px;
 }
 
-#add, #item
+#item
 {
   margin-left: 10px;
+}
+#add
+{
+  margin-left: 10px;
+  background-color: darkgreen;
+  color: white;
+  border: 1px solid darkgreen;
+  box-shadow: 1px 1px 5px red;
 }
 label
 {
@@ -48,8 +56,9 @@ label
   border: 1px solid darkred;
   text-align: center;
   width: 80px;
+  box-shadow: 1px 1px 5px green;
 }
-#clear:disabled
+#clear:disabled, #add:disabled
 {
   background-color: darkslategray;
   border: 1px solid darkslategray;
