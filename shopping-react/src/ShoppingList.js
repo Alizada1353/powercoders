@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class ShoppingList extends Component{
   render() {
     return (
-        <ul>
+        <ol>
           {this.props.items.map((item) => <li>{item}</li>)}
-        </ul>
+        </ol>
     );
   }
 }
