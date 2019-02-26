@@ -49,6 +49,11 @@ label
   text-align: center;
   width: 80px;
 }
+#clear:disabled
+{
+  background-color: darkslategray;
+  border: 1px solid darkslategray;
+}
 #delete
 {
   float: right;
