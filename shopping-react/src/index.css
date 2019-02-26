@@ -6,8 +6,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
 }
 
+#root
+{
+  border: 1px solid cadetblue;
+  padding: 15px;
+  margin: 20px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px darkslategrey;
+  width: 350px;
+}
+#quantity, #item
+{
+  padding: 2px;
+}
+#add, #item
+{
+  margin-left: 10px;
+}
+label
+{
+  padding: 3px;
+  background-color: darkslategrey;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: block;
+  width: 342px;
+  text-align: center;
+}
+#clear
+{
+  background-color: red;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 5px;
+  border: 1px solid red;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
