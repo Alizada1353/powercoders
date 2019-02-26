@@ -24,6 +24,7 @@ body {
 {
   padding: 2px;
 }
+
 #add, #item
 {
   margin-left: 10px;
@@ -40,13 +41,26 @@ label
 }
 #clear
 {
-  background-color: red;
+  background-color: darkred;
   padding: 3px;
-  border-radius: 5px;
   color: white;
   margin-top: 5px;
-  border: 1px solid red;
-
+  border: 1px solid darkred;
+  text-align: center;
+  width: 80px;
+}
+#delete
+{
+  float: right;
+}
+li
+{
+  margin-bottom: 5px;
+}
+ol
+{
+  list-style: none;
+  padding-left: 0;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

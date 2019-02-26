@@ -12,10 +12,10 @@ class ItemInput extends Component{
     this.onQuantityChange = this.onQuantityChange.bind(this);
   }
   onItemChange(event) {
-    this.setState({item: event.target.value}, () => console.log(this.state));
+    this.setState({item: event.target.value});
   }
   onQuantityChange(event) {
-    this.setState({quantity: event.target.value}, () => console.log(this.state));
+    this.setState({quantity: event.target.value});
   }
 
   render() {

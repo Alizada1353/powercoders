@@ -4,7 +4,8 @@ class ShoppingList extends Component{
   render() {
     return (
         <ol>
-          {this.props.items.map((item) => <li>{item}</li>)}
+          {this.props.items.map((item, index) => <li key={index}>{item}
+          <button onClick={() => this.props.onDeleteItem(index)} id="delete">Delete</button></li>)}
         </ol>
     );
   }
