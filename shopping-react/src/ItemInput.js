@@ -25,6 +25,7 @@ class ItemInput extends Component{
           <input onChange={this.onQuantityChange} type="text" id="quantity" size="8" placeholder="quantity"/>
           <input onChange={this.onItemChange} type="text" id="item" placeholder="Type something to buy"/>
           <button onClick={() => this.props.onAddItem(this.state.item.trim(), this.state.quantity.trim())}
+                  disabled={this.state.item.trim() === ''}
                   id="add">Add item</button>
         </div>
     );
