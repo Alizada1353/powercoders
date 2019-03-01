@@ -1,0 +1,42 @@
+body{
+  margin: 10px;
+  padding: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: s;
+}
+
+#attribute{
+  padding: 10px;
+  margin: 20px;
+  text-align: justify;
+  border-bottom: 1px solid black;
+}
+ .heading{
+  color: white;
+  text-transform: capitalize;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid rgba(59, 40, 4, 0.77);
+  background-color: rgba(78, 54, 2, 0.83);
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  left: 500px;
+  right: 200px;
+}
+
+#heading-levels{
+  margin: 20px;
+  padding: 10px;
+}
+
+#ordered-lists{
+  margin: 20px;
+  padding: 10px;
+}
+
+#unordered-lists{
+  margin: 20px;
+  padding: 10px;
+}
