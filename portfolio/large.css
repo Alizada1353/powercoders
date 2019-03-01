@@ -1,125 +1,130 @@
 body {
   position: relative;
   padding: 10px;
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+
 }
-div.my-name{
+
+.my-name {
   text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
   font-size: 14px;
-  color: rgba(53, 64, 65, 0.44);
+    font-family: serif;
+    color: rgb(7, 155, 196);
   margin-top: 0;
 }
-div.my-name h1, ul, ol {
-  margin-top: 0;
-}
-div.first-info{
-  position: relative;
-  padding: 10px 5px;
-}
-div.main-content{
-  position: relative;
-  border-top: 1px solid rgba(115, 17, 0, 0.38);
-  padding: 30px 5px;
+
+div {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
 }
 
-div#personal-info {
-  display: inline-block;
-  padding-left: 8px;
-  width: 27%;
-  line-height: .80;
+#image {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 20px 0 0 10px;
 }
 
-div#image img {
-  position: absolute;
-  left: 25%;
-  top: .3em;
-  width: 115px;
-  height: 145px;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-div.experiences{
-  position: absolute;
-  top: 50px;
-  right: 2em;
-  left: calc(23% + 200px);
-  display: inline-block;
-  font-size: 12px;
-  padding-top: 10px;
-  line-height: 2;
-}
-div.experiences {
-  margin: 0;
+img {
+    width: 200px;
+    height: 245px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-div.main-content .educaional-background{
-  padding-left: 8px;
-  width: 27%;
-}
-div.main-content .educaional-background ul, .educaional-background ul li ul{
-  font-size: 12px;
-  padding-left: 10px;
+#icon, #github, a {
+    padding: 6px 8px;
 }
 
-div.main-content .languages{
-  position: absolute;
-  left: 30%;
-  top: 20px;
-  width: 250px;
-  font-size: 14px;
+#linkedin {
+    color: dodgerblue;
 }
 
-div.main-content .information-technology{
-  position: absolute;
-  right: 1em;
-  top: 20px;
-  left: calc(35% + 250px);
-  display: inline-block;
-  font-size: 12px;
-  line-height: .25;
+.cont1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 5px;
 }
 
-div.footer{
-  position: relative;
-  padding: 10px 5px;
-  border-top: 1px solid rgba(115, 17, 0, 0.38);
+.cont2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 5px;
 }
 
-div.footer .Hobbies{
-  display: inline-block;
-  padding-left: 8px;
-  width: 27%;
-  line-height: .80;
+.cont3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    padding: 5px;
 }
 
-div.references{
-  position: absolute;
-  left: 28%;
-  top: 50px;
-  width: 250px;
-  font-size: 14px;
+.cont4 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    padding: 5px;
+}
+
+.cont5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    padding: 5px;
+}
+
+.cont6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    padding: 5px;
+}
+
+.cont7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    padding: 5px;
 }
 
 p {
-  font-family:sans-serif;
-  color: rgba(66, 44, 39, 0.83);
-  line-height: 0.50;
-  font-size: 12px;
-  padding-left: 10px;
+    font-family:sans-serif;
+    color: rgb(79, 80, 81);
+    line-height: 0.50;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.fa-circle {
+    color: rgb(7, 155, 196);
 }
 
 ul li, ol li {
-  font-family:sans-serif;
-  font-size: 12px;
-  color: rgba(66, 44, 39, 0.83);
-  padding-left: 0;
+    font-family:sans-serif;
+    color: rgb(79, 80, 81);
+    padding-left: 0;
+    padding-top: 10px;
 }
 
 h2.sub-title {
-  font-family: serif;
-  font-size: 16px;
-  color:rgba(7, 49, 110, 0.86);
-  padding-left: 0;
-  padding-bottom: 10px;
-  margin: 0 ;
+    font-family: serif;
+    font-size: 16px;
+    color: rgb(7, 155, 196);
+    padding: 10px 10px;
+    margin: 0 ;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(79, 80, 81);
+}
