@@ -1,0 +1,23 @@
+
+div{
+  border: 1px solid black;
+  background-color: rgb(238, 238, 238);
+  padding: .5em;
+  margin: .5em;
+}
+
+
+.container {
+  display: flex;
+}
+
+.col2 {
+  width: calc(100% - 37em);
+}
+.col1 {
+  width: 15em;
+}
+
+.col3 {
+  width: 15em;
+}
