@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <script src="calc.js">
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Easy Math Calculator</h1>
+      <form class="inputs" name="form">
+        <input name="textView" class="textView">
+      </form>
+      <input type="button" id="clearBtn" value="C" onclick="clean()">
+      <input type="button" id="backBtn" value="<" onclick=back()>
+      <table class="numbers">
+        <tr>
+          <td><input type="button" value="7" onclick="insert(7)"></td>
+          <td><input type="button" value="8" onclick="insert(8)"></td>
+          <td><input type="button" value="9" onclick="insert(9)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="insert(4)"></td>
+          <td><input type="button" value="5" onclick="insert(5)"></td>
+          <td><input type="button" value="6" onclick="insert(6)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="insert(1)"></td>
+          <td><input type="button" value="2" onclick="insert(2)"></td>
+          <td><input type="button" value="3" onclick="insert(3)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="." onclick="insert('.')">
+          <td><input type="button" value="0" onclick="insert(0)"></td>
+          <td><input type="button" value="=" onclick="equal()">
+        </tr>
+      </table>
+      <div class="signs">
+        <table>
+          <tr>
+            <td><input type="button" value="/" onclick=insert('/')></td>
+            <td><input type="button" value="x" onclick=insert('*')></td>
+            <td><input type="button" value="-" onclick=insert('-')></td>
+            <td><input type="button" value="+" onclick=insert('+')></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
