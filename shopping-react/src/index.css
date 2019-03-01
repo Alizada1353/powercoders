@@ -16,7 +16,7 @@ body {
   padding: 15px;
   margin: 20px;
   background-color: cadetblue;
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-box-shadow: 5px 5px darkslategrey;
   width: 350px;
 }
@@ -32,10 +32,12 @@ body {
 #add
 {
   margin-left: 10px;
-  background-color: darkgreen;
+  background-color: darkslategray;
   color: white;
-  border: 1px solid darkgreen;
-  box-shadow: 1px 1px 5px red;
+  border: 1px solid cadetblue;
+  box-shadow: 2px 2px 8px darkslategray;
+  border-radius: 4px;
+
 }
 label
 {
@@ -49,23 +51,33 @@ label
 }
 #clear
 {
-  background-color: darkred;
   padding: 3px;
   color: white;
   margin-top: 5px;
-  border: 1px solid darkred;
   text-align: center;
   width: 80px;
-  box-shadow: 1px 1px 5px green;
+  background-color: darkslategray;
+  border: 1px solid cadetblue;
+  box-shadow: 1px 1px 8px red;
+  border-radius: 4px;
 }
 #clear:disabled, #add:disabled
 {
   background-color: darkslategray;
+  color: white;
   border: 1px solid darkslategray;
+  box-shadow: none;
+  border-radius: 4px;
+
 }
 #delete
 {
   float: right;
+  border-radius: 4px;
+  background-color: darkslategray;
+  color: white;
+  border: 1px solid cadetblue;
+  box-shadow: 1px 1px 5px darkslategray;
 }
 li
 {
@@ -80,3 +92,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
