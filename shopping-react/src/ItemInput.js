@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 class ItemInput extends Component{
   constructor(props) {
     super(props);
@@ -38,12 +39,14 @@ class ItemInput extends Component{
 
   render() {
     return (
+
         <div>
           <label htmlFor="item"> Type the item you want to buy </label>
-          <input onChange={this.onQuantityChange}
+          <input autoFocus="true" onChange={this.onQuantityChange}
                  onKeyUp={this.onKeyUp}
                  value={this.state.quantity}
-                 type="text" id="quantity" size="8" placeholder="quantity"/>
+                 type="text" id="quantity" size="8" placeholder="quantity"
+          />
 
           <input onChange={this.onItemChange}
                  onKeyUp={this.onKeyUp}
