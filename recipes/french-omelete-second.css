@@ -20,9 +20,8 @@ body {
   text-transform: lowercase;
   padding: 30px 0px 0px 30px;
 }
-
-background-color: rgba(29, 61, 94, 0.66);
 .content-1 h2{
+  background-color: rgba(29, 61, 94, 0.66);
   color:rgba(190, 135, 0, 0.6);
 }
 
@@ -32,7 +31,6 @@ background-color: rgba(29, 61, 94, 0.66);
   border: 1px solid rgba(96, 46, 6, 0.62);
   padding: 10px;
   margin-top: 10px;
-  border: 1px solid rgba(97, 25, 4, 0.66);
 }
 
 .head .name{
@@ -40,7 +38,7 @@ background-color: rgba(29, 61, 94, 0.66);
   grid-column-end: 1;
   margin-top: 1.5em;
   font-size: 3em;
-  font-family: Times New Roman;
+  font-family: sans-serif, "Times New Roman";
   text-align: center;
   color: rgb(173, 129, 44);
   text-shadow: 1px 2px 1px white;
