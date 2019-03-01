@@ -2,9 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Recipe-1</title>
-    <link rel="stylesheet" href="french-omelete.css">
+    <meta name="viewport" content="width=device-width">
+    <title>French Omelet</title>
+    <link rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 800px)" href="omelete-medium.css">
+    <link rel="stylesheet" media="screen and (max-width: 660px) and (min-width: 320px)" href="omelete-small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1500px) and (min-width: 800px)" href="omelete-large.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather|Quattrocento+Sans" rel="stylesheet">
+    <script src="recipe.js"></script>
   </head>
   <body>
 
@@ -16,17 +20,19 @@
     </div>
 
 
-    <div class="content-1">
-       <h2>Ingredients:</h2>
-       <ul>
+    <div id="ingredients">
+        <h2><span id="hide-list" class="show" onclick="hide(event);">&#9711;</span>
+            <span id="show-list" class="hide" onclick="show(event);">&#8857;</span>
+            Ingredients</h2>
+       <ul id="ingredient-list">
          <li>eggs: 2</li>
          <li>water: 2 tbsp</li>
          <li>salt: 1/8 tbsp</li>
          <li>pepper:dash papper</li>
          <li>butter:1tbsp</li>
        </ul>
-
     </div>
+
     <div class="content-2">
       <h2>Instructions</h2>
       <ol>

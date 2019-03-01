@@ -1,27 +1,145 @@
-h1{
-  font-family: 'Merriweather', serif;
+body {
+  position: relative;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  font-family: 'Arial', sans-serif;
+  grid-gap: 5px;
+}
+
+div {
+  padding: 25px;
+}
+
+div.name {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color:rgba(0, 0, 0, 0.80);
+  border: 1px solid dimgrey;
+  border-radius: 10px;
+  color: chocolate;
+  text-shadow: 1px 1px 1px cadetblue;
   text-align: center;
+  padding: 10px;
 }
 
-h2{
-  font-family: 'Merriweather', serif;
-}
-h3 h4{
-  font-family: 'Merriweather', serif;
-  font-size: 14px;
-}
-
-p{
-  font-family: 'Quattrocento Sans', sans-serif;
+div.name h1{
+  border: .5px solid lightcoral;
+  border-radius: 5px;
+  display: inline-block;
+  background-color:rgba(0, 0, 0, 0.20);
+  padding: 8px;
+  margin: 10px;
 }
 
-ul li{
-  font-family: 'Quattrocento Sans', sans-serif;
+div#ingredients {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: rgba(0, 0, 0, 0.80);
+  color: ghostwhite;
+  padding-left: 10px;
+  border: 1px solid beige;
+  border-radius: 15px;
 }
 
-ol li{
-  font-family: 'Quattrocento Sans', sans-serif;
+div#ingredients ul li {
+  line-height: 3.25;
+  font-weight: bold;
+  color: bisque;
 }
-.quantity{
-  font-style: 'Inconsolata', monospace;
+
+div#ingredients h2 {
+  background-color: saddlebrown;
+  color: aliceblue;
+  margin-left: 0;
+  text-align: left;
+  display: inline-block;
+}
+div.photo img {
+  height: 50vh;
+  width: 50vh;
+  border: darkslategrey;
+  border-radius: 20px;
+
+}
+
+div.photo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 0;
+}
+
+div.different {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  text-align: center;
+  padding-top: 53px;
+  border: 1px solid beige;
+  border-radius: 20px;
+}
+
+div.different p {
+  padding: 30px 10px 10px;
+  font-size: 1.5em;
+  color: dimgrey;
+}
+
+div.Tip {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+}
+
+div.Tip p{
+  line-height: 1.80;
+  color: darkgrey;
+}
+
+div.cocking-instructions {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+div.cocking-instructions ol li {
+  line-height: 1.80;
+  color: darkgrey;
+}
+h2 {
+  border: 1px solid #475B70;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 20px;
+  text-align: center;
+  color: saddlebrown;
+}
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.hide {
+  display: none;
+}
+
+div#footer {
+  background-color: rgba(0, 0, 0, 0.80);
+  color: ghostwhite;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.80);
+  border-radius: 20px;
+  font-size: 20px;
 }

@@ -2,18 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>recipe-3</title>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="recipe-3.css">
+    <link rel="stylesheet" media="screen and (max-width: 856px) and (min-width: 725px)" href="omelet-3-medium.css">
+    <link rel="stylesheet" media="screen and (max-width: 725px) and (min-width: 360px)" href="omelet-3-small.css">
+
+    <script src="recipe.js"></script>
   </head>
   <body>
-    <h1>Crispy Greek-style pie</h1>
-    <p><img src="pie-recipe.jpg" alt="Crispy Greek-style pie"></p>
-    <p>A crispy pie that you can adapt for your needs, add chicken or
-      keep it veggie. A good fail-safe for your repertoire</p>
-    <div class="Ingredience">
-      <h2>ingredince</h2>
-      <ul>
+
+    <div class="name"><h1>Crispy Greek-style pie</h1></div>
+
+    <div class="photo"><img src="pie-recipe.jpg" alt="Crispy Greek-style pie"></div>
+
+    <div class="different"><p>A crispy pie that you can adapt for your needs, add chicken or
+      keep it veggie. A good fail-safe for your repertoire</p></div>
+
+    <div id="ingredients">
+      <h2><span id="hide-list" class="show" onclick="hide(event);">&#9711;</span>
+        <span id="show-list" class="hide" onclick="show(event);">&#8857;</span>
+        Ingredients</h2>
+      <ul id="ingredient-list">
         <li><span class="quantity">200</span>g bag spinach leaves</li>
         <li><span class="quantity">175</span>g jar sundried tomato in oil</li>
         <li><span class="quantity">100</span>g feta cheese, crumbled</li>
@@ -57,6 +68,7 @@
         to make cigar-shaped packages. Brush with oil and cook for 15 mins or
         until golden and crisp..</p>
     </div>
+    <div id="footer">Always eat healthy </div>
 
   </body>
 </html>
