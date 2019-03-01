@@ -29,20 +29,20 @@ class App extends Component {
   onAddItem(name, quantity) {
     let item = name;
     if (quantity !== '') {
-      item = `(${quantity}) ` + item;
+      item = item + `(${quantity}) `;
     }
     this.setState((prevState) => ({items: prevState.items.concat(item)}));
   }
 
   render() {
     return (
-        <>
+        <div>
           <ItemInput onAddItem={this.onAddItem}/>
           <ClearList onClearList={this.onClearList}
           disabled={this.state.items.length === 0}/>
           <ShoppingList items={this.state.items}
                         onDeleteItem={this.onDeleteItem}/>
-        </>
+        </div>
     );
   }
 }
