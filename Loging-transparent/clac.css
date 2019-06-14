@@ -1,0 +1,129 @@
+body
+{
+  height: 500px;
+  width: 800px;
+  background-color: rgba(9, 67, 91, 0.4);
+}
+.container
+{
+  border: 2px solid rgb(180, 202, 203);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 435px;
+  width: 260px;
+  padding: 10px;
+  background-color: rgba(5, 74, 84, 0.18);
+  border-radius: 5px;
+}
+h1
+{
+  margin: 0 0 5px 0;
+  padding: 6px;
+  font-size: 18px;
+  text-align: center;
+  height: 18px;
+  width: 96%;
+  border-radius: 10px;
+  color: rgba(87, 84, 84, 0.99);
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  font-family: 'Helvetica', sans-serif;
+}
+
+.inputs
+{
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline-block;
+  height: 58px;
+  width: 96%;
+}
+.textView
+{
+  height: 40px;
+  width: 99%;
+  border: 2px solid rgba(199, 199, 199, 0.91);
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(3, 64, 69);
+  background: rgba(236, 240, 244, 0.9);
+}
+.numbers tr, .signs tr
+{
+  padding: 0;
+  margin-bottom: 0;
+}
+.numbers tr input, .signs table tr input
+{
+  padding: 5px;
+  margin: 3px;
+  background-color: rgba(24, 206, 219, 0.12);
+  color: #10464d;
+  border: 1px solid rgba(55, 53, 53, 0.59);
+  height: 52px;
+  width: 54px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+.signs table tr input
+{
+  background-color: rgba(22, 63, 66, 0.81);
+  color: #9adee6;
+  border: 1px solid #969494;
+}
+.signs
+{
+  position: absolute;
+  top: 182px;
+  right: 10px;
+  width: 22%;
+}
+.signs tr {
+  display: inline-grid;
+}
+.numbers
+{
+  position: absolute;
+  top: 181px;
+}
+#clearBtn, #backBtn
+{
+  padding: 6px;
+  font-size: 20px;
+  text-align: center;;
+  background-color: rgba(24, 206, 219, 0.12);
+  color: #10464d;
+  border: 1px solid rgba(55, 53, 53, 0.59);
+  border-radius: 10px;
+  margin-top: 9px;
+  position: absolute;
+  top: 113px;
+  width: 45%;
+  font-weight: bold;
+}
+#backBtn
+{
+  position: absolute;
+  top: 113px;
+  right: 10px;
+}
+.numbers tr td input:hover, #backBtn:hover
+{
+  background-color: rgb(2, 78, 84);
+  color: #fff;
+}
+#clearBtn:hover
+{
+  background-color: darkred;
+  color: #fff;
+}
+.signs table tr input:hover
+{
+  background-color: rgba(24, 206, 219, 0.12);
+  color: #10464d;
+}
+
+

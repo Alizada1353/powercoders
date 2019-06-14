@@ -122,7 +122,6 @@ class ShoppingListItem {
     listItem.appendChild(deleteButton).className = 'fa fa-trash';
 
     deleteButton.addEventListener('click', function (event) {
-      console.log('Delete is clicked');
       listItem.remove();
       const inputBox = document.getElementById('item');
       inputBox.focus();

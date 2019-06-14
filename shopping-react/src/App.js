@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import ItemInput from './ItemInput'
 import ClearList from './ClearList'
 import ShoppingList from './ShoppingList'
@@ -29,7 +28,7 @@ class App extends Component {
   onAddItem(name, quantity) {
     let item = name;
     if (quantity !== '') {
-      item = item + `(${quantity}) `;
+      item = `(${quantity}) `+ item ;
     }
     this.setState((prevState) => ({items: prevState.items.concat(item)}));
   }
